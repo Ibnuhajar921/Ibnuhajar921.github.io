@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    position: relative;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.vertical-line {
+    width: 2px;
+    height: 250px;
+    background-color: #e74c3c;
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+
+.horizontal-line {
+    width: 250px;
+    height: 2px;
+    background-color: #27ae60;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}

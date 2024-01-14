@@ -1,0 +1,68 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<title>Checkout Page</title>
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <div class="card w-50 m-auto">
+        <div class="card-body">
+
+            <h1 class="text-center">Billing Information</h1>
+            <form method="post">
+
+                <!-- Form input Full Name -->
+                <div class="mb-3">
+                    <label for="input_full_name" class="form-label">Full Name</label>
+                    <input name="inpFullName" id="input_full_name" type="text" class="form-control" required>
+                </div>
+
+                <!-- Form input Street Name -->
+                <div class="mb-3">
+                    <label for="input_street_name" class="form-label">Street Name</label>
+                    <input name="inpStreet" id="input_street_name" type="text" class="form-control" required>
+                </div>
+
+                <!-- Form input Province -->
+                <div class="mb-3">
+                    <label for="input_province" class="form-label">Province</label>
+                    <input name="inpProvince" id="input_province" type="text" class="form-control" required>
+                </div>
+
+                <!-- Form input District -->
+                <div class="mb-3">
+                    <label for="input_district" class="form-label">District</label>
+                    <input name="inpDistrict" id="input_district" type="text" class="form-control" required>
+                </div>
+
+                <!-- Form input Sub-District -->
+                <div class="mb-3">
+                    <label for="input_sub_district" class="form-label">Sub-District</label>
+                    <input name="inpSubDistrict" id="input_sub_district" type="text" class="form-control" required>
+                </div>
+
+                <!-- Form input Postal Code -->
+                <div class="mb-3">
+                    <label for="input_postal_code" class="form-label">Postal Code</label>
+                    <input name="inpPostalCode" id="input_postal_code" type="text" class="form-control" required>
+                </div>
+
+                <!-- Form input Phone Number -->
+                <div class="mb-3">
+                    <label for="input_phone_number" class="form-label">Phone Number</label>
+                    <input name="inpPhoneNumber" id="input_phone_number" type="tel" class="form-control" required>
+                </div>
+
+                <!-- Form input Email -->
+                <div class="mb-3">
+                    <label for="input_email" class="form-label">Email</label>
+                    <input name="inpEmail" id="input_email" type="email" class="form-control" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary float-end">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,167 @@
+{% extends 'layout.html' %}
+
+{% block head%}
+<title>Home Page</title>
+{% endblock %}
+
+{% block body %}
+<!-- Carousel Start -->
+<div class="container">
+    <div id="carouselExampleIndicators" class="carousel-slide">
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="../static/Carousel/car6.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="../static/Carousel/car7.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="../static/Carousel/car9.jpeg" class="d-block w-100" alt="...">
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<!-- Carousel End -->
+
+<!-- Product Start -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card">
+                <img src="../static/Headwear/Topi1.jpg" class="card-img-top" id="productImage1" alt="...">
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card">
+                <img src="../static/Headwear/Topi2.jpg" class="card-img-top" id="productImage2"  alt="...">
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card">
+                <img src="../static/Outerwear/Outer6.jpg" class="card-img-top" id="productImage3" alt="...">
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card">
+                <img src="../static/Outerwear/Outer7.jpg" class="card-img-top" id="productImage4" alt="...">
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card">
+                <img src="../static/Outerwear/Outer2.jpg" class="card-img-top" id="productImage5" alt="...">
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card">
+                <img src="../static/Pants/Pants4.jpg" class="card-img-top" id="productImage6" alt="...">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card">
+                <img src="../static/T-Shirt/T-S2.jpg" class="card-img-top" id="productImage7" alt="...">
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card">
+                <img src="../static/T-Shirt/T-S4.jpg" class="card-img-top" id="productImage8" alt="...">
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card">
+                <img src="../static/Shirt/Shirt1.jpg" class="card-img-top" id="productImage9" alt="...">
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card">
+                <img src="../static/Shirt/Shirt5.jpg" class="card-img-top" id="productImage10" alt="...">
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card">
+                <img src="../static/Pants/Pants1.jpg" class="card-img-top" id="productImage11" alt="...">
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card">
+                <img src="../static/Pants/Pants2.jpg" class="card-img-top" id="productImage12" alt="...">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Product End -->
+
+<!-- Script JS -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const productImages = document.querySelectorAll('.card-img-top');
+
+        productImages.forEach((image) => {
+            image.originalSrc = image.src;
+
+            image.addEventListener('click', function() {
+                if (image.src !== image.originalSrc) {
+                    image.src = image.originalSrc;
+                } else {
+                switch (image.id) {
+                    case 'productImage1':
+                        image.src = '/static/Headwear/Topi1.1.jpg';
+                        break;
+                    case 'productImage2':
+                        image.src = '/static/Headwear/Topi2.1.jpg';
+                        break;
+                    case 'productImage3':
+                        image.src = '/static/Outerwear/Outer6.1.jpg';
+                        break;
+                    case 'productImage4':
+                        image.src = '/static/Outerwear/Outer7.1.jpg';
+                        break;
+                    case 'productImage5':
+                        image.src = '/static/Outerwear/Outer2.1.jpg';
+                        break;
+                    case 'productImage6':
+                        image.src = '/static/Pants/Pants4.1.jpg';
+                        break;
+                    case 'productImage7':
+                        image.src = '/static/T-Shirt/TS2.jpg';
+                        break;
+                    case 'productImage8':
+                        image.src = '/static/T-Shirt/Ts4.jpg';
+                        break;
+                    case 'productImage9':
+                        image.src = '/static/Shirt/Shirt1.1.jpg';
+                        break;
+                    case 'productImage10':
+                        image.src = '/static/Shirt/Shirt5.1.jpg';
+                        break;
+                    case 'productImage11':
+                        image.src = '/static/Pants/Pants1.1.jpg';
+                        break;
+                    case 'productImage12':
+                        image.src = '/static/Pants/Pants2.1.jpg';
+                        break;
+                    default:
+                        break;
+                }
+            }
+        });
+    });
+});
+</script>
+<!-- Script JS -->
+
+{% endblock %}

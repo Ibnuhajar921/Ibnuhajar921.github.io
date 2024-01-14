@@ -1,0 +1,238 @@
+:root {
+    --mainColor: #353940;
+    --secondColor: #4D5159;
+    --thirdColor: #979DA6;
+    --fourthColor: #B8BCBF;
+    --fifthColor: #0D0D0D;
+    --acsentColor: #2C96BF;
+    /* */
+}
+
+body {
+    background-color: var(--mainColor);
+    min-height: 900px;
+    font-family: 'ubuntu', sans-serif;
+}
+
+section h1 {
+    color: #FFFF;
+    font-size: 2.5rem;
+}
+
+
+/* Navbar Start */
+.nav-link.active {
+    color: var(--acsentColor) !important;
+    font-weight: 700;
+}
+
+.nav-dark {
+    background-color: var(--secondColor) !important;
+    z-index: 10;
+}
+
+/* Add this CSS to make the text inside the navbar white */
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+/* Optional: If you want to change the color of the brand text */
+.navbar-brand {
+    color: white !important;
+}
+
+/* Optional: If you want to change the color of the toggler icon */
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+.logo-brand {
+    width: 55px;
+    height: auto;
+    margin-right: 0px;
+}
+
+/* Navbar End */
+
+
+/* Hero Start */
+.color-acsent {
+    color: var(--acsentColor);
+}
+
+#hero {
+    color: #FFF;
+    min-height: 100vh;
+    padding-top: 75px;
+}
+
+#hero h1 {
+    font-size: 3rem;
+}
+
+#hero h2 {
+    font-weight: 300;
+}
+
+#hero p {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+/* CTA */
+.btn-custom1 {
+    background-color: var(--acsentColor);
+    text-align: center;
+    color: #FFF;
+    min-width: 150px;
+    height: 45px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.btn-custom1:hover {
+    box-shadow: 0 0 5px rgba(86, 161, 191, .8);
+}
+
+.cv {
+    color: #FFF;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.social-icon svg {
+    margin-right: .7em;
+    margin-bottom: 10px;
+}
+
+.round-image {
+    width: 80%;
+    border-radius: 70%;
+    display: block;
+    margin: auto;
+    margin-top: 70px;
+    float: right;
+}
+
+/* Hero End */
+
+
+/* About Me Start */
+hr {
+    width: 30%;
+    height: 5px;
+    color: var(--acsentColor);
+    margin: 0 auto;
+    opacity: 100%;
+}
+
+#about {
+    min-height: 300px;
+    width: 100%;
+    background-color: var(--secondColor);
+    color: #FFF;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+}
+
+/* About Me End*/
+
+
+/* Skill Start */
+#skill {
+    min-height: 600px;
+    width: 100%;
+    color: #FFF;
+}
+
+#skill img {
+    width: 12%;
+    margin: 10px;
+
+}
+
+#skill .card {
+    background-color: var(--thirdColor);
+    color: #FFF;
+}
+
+#skill .card:hover {
+    background-color: var(--acsentColor);
+
+}
+
+/* Skill End */
+
+
+/* Sertifikat Start */
+#sertifikat {
+    margin-top: -170px;
+    padding: 270px;
+    padding-bottom: 80px;
+    background-color: var(--secondColor);
+}
+
+#sertifikat p a {
+    color: #FFF !important;
+    text-decoration: none;
+}
+
+#sertifikat img {
+    width: 49%;
+    padding: 10px;
+}
+
+#sertifikat svg {
+    color: #FFF;
+}
+
+/* Sertifikat End */
+
+
+/* Contact */
+#contact {
+    color: #FFF;
+}
+
+.contact-input {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.contact-input[name="message"] {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.contact-button {
+    width: 10%;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* Contact End */
+
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icon-footer {
+    color: #FFF;
+    display: flex;
+    gap: 10px;
+}
+
+/* Footer End */

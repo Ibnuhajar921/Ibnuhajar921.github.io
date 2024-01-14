@@ -1,0 +1,162 @@
+/* Reset some default browser styles */
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+/* Set a background color and default font for the entire page */
+h1, h2, h3, p, ul, li, a {
+    list-style: none;
+    text-decoration: none;
+}
+/* Style the header */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the logo */
+.header .logo {
+    font-size: 24px;
+    padding-left: 2%;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    /* margin-right: 20px; */
+}
+
+/* Style the navigation links */
+.header nav {
+    position: relative;
+    display: flex;
+    right : 18%;
+}
+
+.header nav a {
+    color: #fff;
+    margin: 0 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Add styles for dropdowns */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.dropdown a {
+    color: #fff;
+    margin: 0 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}   
+
+.dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Additional styling for the dropdown links on hover */
+.dropdown:hover .dropdown-content a:hover {
+    background-color: #444;
+}
+
+/* Change cursor to a pointer on hover for dropdown links */
+.dropdown a:hover {
+    cursor: pointer;
+}
+
+/* Style the icons */
+.header .icons {
+    display: flex;
+    align-items: center;
+}
+
+.header .icons a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+.header .icons a:hover {
+    color: #ff5733; /* Change the color on hover (you can adjust the color) */
+    cursor: pointer;
+}
+
+/* Style the product section */
+.product {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.product .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product .heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.right {
+    /* position: relative; */
+    float:right;
+    right: 0px;
+    width: 300px;
+    padding: 10px;
+  }
+
+.img-container{
+    margin-bottom: 10px;
+    float: center;
+    display: inline;
+}
+
+.carousel slide{
+    padding-top: 5px;
+  }
+
+.form-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    box-shadow: 3px 3px 10px 0px #000;
+    border-radius: 15px;
+}
+
+.form-register-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    box-shadow: 3px 3px 10px 0px #000;
+    border-radius: 15px;
+}

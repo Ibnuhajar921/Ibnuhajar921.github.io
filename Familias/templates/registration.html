@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<title>Login</title>
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <div class="card w-50 m-auto ">
+        <div class="card-body">
+
+            <h1 class="text-center">Registration</h1>
+            <form method="post">
+
+                <!--  Form input nama -->
+                <div class="mb-3">
+                    <label for="input_nama" class="form-label">Masukkan nama anda</label>
+                    <input name="inpNama" id="input_nama" type="text" class="form-control">
+                </div>
+
+                <!--  Form input email -->
+                <div class="mb-3">
+                    <label for="input_email" class="form-label">Masukkan alamat email anda</label>
+                    <input name="inpEmail" id="input_email" type="email" class="form-control"
+                        aria-describedby="emailHelp">
+                </div>
+
+                <!--  Form input password -->
+                <div class="mb-3">
+                    <label for="input_password" class="form-label">Password</label>
+                    <input name="inpPass" id="input_password" type="password" class="form-control">
+                </div>
+
+                {% if msg %}
+                <p class="text-danger">{{ msg }}</p>
+                {% endif %}
+
+                <p class="text-center">Sudah punya akun? <a href="/login">Login</a></p>
+                <button type="submit" class="btn btn-primary float-end">Register</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

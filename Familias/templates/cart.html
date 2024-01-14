@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+<!-- Di dalam blok body di cart.html -->
+{% block body %}
+<!-- Tambahkan pemeriksaan apakah checkout_data terdefinisi -->
+{% if checkout_data is defined %}
+<ul>
+  <li><strong>Full Name:</strong> {{ checkout_data.full_name | default('N/A') }}</li>
+  <li><strong>Street Name:</strong> {{ checkout_data.street_name | default('N/A') }}</li>
+  <li><strong>Province:</strong> {{ checkout_data.province | default('N/A') }}</li>
+  <li><strong>District:</strong> {{ checkout_data.district | default('N/A') }}</li>
+  <li><strong>Sub-District:</strong> {{ checkout_data.sub_district | default('N/A') }}</li>
+  <li><strong>Postal Code:</strong> {{ checkout_data.postal_code | default('N/A') }}</li>
+  <li><strong>Phone Number:</strong> {{ checkout_data.phone_number | default('N/A') }}</li>
+  <li><strong>Email:</strong> {{ checkout_data.email | default('N/A') }}</li>
+  <!-- Sisanya disesuaikan -->
+</ul>
+{% else %}
+<p>No checkout data available.</p>
+{% endif %}
+{% endblock %}
